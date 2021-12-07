@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/*-------------------------------------*/
+/*index*/
+/*-------------------------------------*/
+
+/* ====================
+
+indexSection 공통
+
+==================== */
+section.indexSection > div {
+  box-sizing: border-box;
+}
+section.indexSection > div h1 {
+  font-family: NeueMetanaBold;
+}
+
+section.indexSection:not(:first-of-type) {
+  margin: 36rem 10vw 0 auto;
+}
+section.indexSection .innerWrap .h1TopText {
+  font-family: NeueMetanaRegular;
+  font-size: 0.7rem;
+  margin-bottom: 2.4rem;
+  display: block;
+}
+section.indexSection .innerWrap h1 {
+  position: relative;
+  height: 36rem;
+}
+section.indexSection .innerWrap h1 > p {
+  position: absolute;
+  font-size: 18rem;
+}
+
+/* listWrap */
+section.indexSection .innerWrap .listWrap {
+  margin: 7rem 0;
+}
+section.indexSection .innerWrap .listWrap .listTitle {
+  margin: 0 0 1.7rem 0;
+  font-size: 0.97rem;
+}
+section.indexSection .innerWrap .listWrap ul li {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  word-break: break-word;
+  padding: 3rem 0;
+  border-top: 1px solid #f2f3f5;
+}
+section.indexSection .innerWrap .listWrap ul li:last-of-type {
+  border-bottom: 1px solid #f2f3f5;
+}
+section.indexSection .innerWrap .listWrap ul li a {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+section.indexSection .innerWrap .listWrap ul li > span,
+section.indexSection .innerWrap .listWrap ul li a > span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.indexSection .innerWrap .listWrap ul li > span:first-of-type,
+section.indexSection .innerWrap .listWrap ul li a > span:first-of-type {
+  width: 80%;
+}
+section.indexSection .innerWrap .listWrap ul li > .listYear,
+section.indexSection .innerWrap .listWrap ul li a > .listYear {
+  right: 0;
+}
+section.indexSection .innerWrap .listWrap ul li img {
+  position: absolute;
+  width: 30rem;
+  top: 0;
+  right: 0;
+  height: 0;
+  transition: all 0.4s ease;
+}
+section.indexSection .innerWrap .listWrap ul li .listFrom {
+  color: #707070;
+  font-size: 0.97rem;
+}
+/* li:hover */
+section.indexSection .innerWrap .listWrap ul li:hover a {
+  transition: all 0.4s ease-in-out;
+  color: #141613;
+  text-shadow: -1px 0 #f2f3f5, 0 1px #f2f3f5, 1px 0 #f2f3f5, 0 -1px #f2f3f5;
+}
+section.indexSection .innerWrap .listWrap ul li:hover img {
+  height: auto;
+  z-index: 1;
+}
+
+/* ====================
+
+section#info
+
+==================== */
+section#info .infoWrap {
+  display: block;
+  padding: 25vw 0 0;
+  font-family: NeueMetanaBold;
+}
+section#info .infoWrap h1 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+section#info .infoWrap p {
+  font-size: 4.8rem;
+  line-height: 1.2;
+}
+section#info .infoWrap p:last-of-type {
+  margin-top: 6rem;
+}
+
+/* ====================
+
+section#portfolio
+
+==================== */
+section#portfolio .portfolioWrap h1 p:first-of-type {
+  top: 0;
+  left: 0;
+}
+section#portfolio .portfolioWrap h1 p:last-of-type {
+  bottom: 0;
+  right: -15%;
+}
+
+/* ====================
+
+section#experience
+
+==================== */
+section#experience .experienceWrap h1 p:first-of-type {
+  top: 0;
+  left: 0;
+}
+section#experience .experienceWrap h1 p:last-of-type {
+  bottom: 0;
+  right: -15%;
+}
+
+/* ====================
+
+section#contact
+
+==================== */
+
+section#contact .contactWrap h1 {
+  height: 51.6rem;
+}
+section#contact .contactWrap h1 > p:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+section#contact .contactWrap h1 > p:nth-of-type(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#contact .contactWrap h1 > p:nth-of-type(3) {
+  bottom: 0;
+  right: -15%;
+}
+/* contactLinkWrap */
+section#contact .contactWrap .contactLinkWrap > div {
+  margin: 7rem 0;
+  position: relative;
+}
+section#contact .contactWrap .contactLinkWrap > div h2 {
+  margin: 0 0 1.7rem 0;
+  font-size: 0.97rem;
+}
+section#contact .contactWrap .contactLinkWrap > div .emailText {
+  width: fit-content;
+  font-size: 2.4rem;
+  font-family: NeueMetanaBold;
+  cursor: pointer;
+}
+section#contact .contactWrap .contactLinkWrap .emailWrap .arrowImg {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 6rem;
+}
+section#contact .contactWrap .contactLinkWrap .connectLinkWrap ul li {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-family: NeueMetanaBold;
+  cursor: pointer;
+}
+section#contact
+  .contactWrap
+  .contactLinkWrap
+  .connectLinkWrap
+  ul
+  li:not(:last-of-type) {
+  margin-right: 4rem;
+}
+/* contactWrap hover */
+section#contact .contactWrap .contactLinkWrap > div .emailText:hover a,
+section#contact .contactWrap .contactLinkWrap .connectLinkWrap ul li:hover {
+  transition: all 0.4s ease-in-out;
+  color: #141613;
+  text-shadow: -1px 0 #f2f3f5, 0 1px #f2f3f5, 1px 0 #f2f3f5, 0 -1px #f2f3f5;
+}

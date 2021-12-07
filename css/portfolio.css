@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/*-------------------------------------*/
+/*project*/
+/*-------------------------------------*/
+
+#wrap.portfolio,
+section#portfolio {
+  height: 100vh;
+}
+/* ====================
+
+section#portfolio
+
+==================== */
+section#portfolio {
+  padding: 80px 3% 0;
+  box-sizing: border-box;
+  margin: 0 0 0 auto;
+  width: 90vw;
+}
+section#portfolio .portfolioList,
+section#portfolio .portfolioListBg {
+  position: absolute;
+}
+
+/* portfolioList */
+section#portfolio .portfolioList {
+  top: 80px;
+}
+section#portfolio .portfolioList li:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+section#portfolio .portfolioList li a {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: NeueMetanaBold;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  transition: all 0.4s ease-in-out;
+}
+section#portfolio .portfolioList li a.textShadow {
+  color: #141613;
+  text-shadow: -1px 0 #f3f3f3, 0 1px #f3f3f3, 1px 0 #f3f3f3, 0 -1px #f3f3f3;
+}
+
+/* portfolioListBg */
+section#portfolio .portfolioListBg {
+  top: 10%;
+  right: 5%;
+  height: 15rem;
+  z-index: -1;
+}
+section#portfolio .portfolioListBg > img {
+  position: relative;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+}
+
+/* portfolioListText */
+section#portfolio .portfolioListText {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  height: 0.55rem;
+  overflow: hidden;
+}
+section#portfolio .portfolioListText #portfolioText {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  height: 0;
+  opacity: 0;
+}
+section#portfolio .portfolioListText #portfolioText li {
+  width: 47%;
+  font-size: 0.6rem;
+}
+section#portfolio .portfolioListText #portfolioText li:last-of-type {
+  text-align: right;
+}
+
+section#portfolio .portfolioListText #portfolioText.visible {
+  height: 100%;
+  opacity: 1;
+}
+
+/* ====================
+
+section#portfolioDetail
+
+==================== */
+
+/* detailInfo */
+section#portfolioDetail.detailInfo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+section#portfolioDetail h1 {
+  font-size: 7.9rem;
+  line-height: 1.2;
+  font-family: "NeueMetanaBold", sans-serif;
+}
+
+/* portfolioTextTable */
+section#portfolioDetail .portfolioTextTable {
+  margin: 5rem 0;
+}
+section#portfolioDetail .portfolioTextTable table {
+  width: 100%;
+}
+section#portfolioDetail .portfolioTextTable table tr {
+}
+section#portfolioDetail .portfolioTextTable table tr th,
+section#portfolioDetail .portfolioTextTable table tr td {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+  padding: 1.3rem 2rem;
+}
+section#portfolioDetail .portfolioTextTable table tr th {
+  padding: 1.3rem 2rem 1.3rem 0;
+  border-right: 1px solid #2a2a2a;
+  width: 22%;
+}
+section#portfolioDetail .portfolioTextTable table tr td {
+}
+section#portfolioDetail .portfolioTextTable table tr:not(:last-of-type) th,
+section#portfolioDetail .portfolioTextTable table tr:not(:last-of-type) td {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+/* portfolioLink */
+section#portfolioDetail .portfolioLink ul {
+  display: flex;
+}
+section#portfolioDetail .portfolioLink ul li {
+  position: relative;
+  cursor: pointer;
+  padding: 0.6rem 1.4rem;
+  border-radius: 3rem;
+  border: 1px solid #f2f3f5;
+  letter-spacing: -0.3px;
+  transition: all 0.4s ease-in-out;
+}
+section#portfolioDetail .portfolioLink ul li:not(:last-of-type) {
+  margin-right: 1rem;
+}
+section#portfolioDetail .portfolioLink ul li:hover {
+  border: 1px solid transparent;
+  color: #1a1a1a;
+  background-color: #f2f3f5;
+}
+
+/* ====================
+
+section#portfolioDetailImg
+
+==================== */
+section#portfolioDetailImg {
+  margin: 5rem 10vw 14rem auto;
+}
+section#portfolioDetailImg .detailImgText {
+  margin-bottom: 1.5rem;
+}
+section#portfolioDetailImg img {
+  width: 100%;
+}
+section#portfolioDetailImg.portfolioInfoWrap {
+}
+section#portfolioDetailImg.portfolioInfoWrap h2 {
+  font-family: "NeueMetanaBold", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+section#portfolioDetailImg.portfolioInfoWrap ul {
+  font-family: "NotoSansKR", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: -0.3px;
+}
+section#portfolioDetailImg.portfolioInfoWrap ul:not(:last-of-type) {
+  margin: 0 0 7rem 0;
+}
+section#portfolioDetailImg.portfolioInfoWrap ul li {
+  position: relative;
+  padding: 0 0 0 1.2rem;
+  box-sizing: border-box;
+}
+section#portfolioDetailImg.portfolioInfoWrap ul li:not(:last-of-type) {
+  margin-bottom: 0.8rem;
+}
+section#portfolioDetailImg.portfolioInfoWrap ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-bottom: 1px solid #f2f3f5;
+  width: 0.5rem;
+}
+
+/* ====================
+
+미디어쿼리
+
+==================== */
+
+/* max-width: 1024px */
+@media screen and (max-width: 1024px) {
+  section#portfolio .portfolioListBg {
+    left: 3%;
+    right: unset;
+    bottom: 10%;
+    top: unset;
+  }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768px) {
+  header .allPortfolioLink {
+    font-size: inherit;
+    padding: 3rem 0 0 0.3rem;
+  }
+  header .allPortfolioLink::before {
+    content: "";
+  }
+  section#portfolio .portfolioListText {
+    height: 0.9rem;
+  }
+}

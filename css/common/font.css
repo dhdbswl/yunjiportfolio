@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*-------------------------------------*/
+/*google web font*/
+/*-------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+
+@font-face {
+  font-family: NeueMetanaRegular;
+  src: url(../../fonts/NeueMetana-Regular.otf);
+}
+@font-face {
+  font-family: NeueMetanaBold;
+  src: url(../../fonts/NeueMetana-Bold.otf);
+}
+
+html {
+  font-family: "NeueMetanaRegular", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  line-height: 1.2;
+}
+
+.NeueMetanaRegular {
+  font-family: "NeueMetanaRegular", sans-serif;
+}
+.NeueMetanaBold {
+  font-family: "NeueMetanaBold", sans-serif;
+}
+
+.NotoSansKR300 {
+  font-family: "NotoSansKR", sans-serif;
+  font-weight: 300;
+}
+.NotoSansKR400 {
+  font-family: "NotoSansKR", sans-serif;
+  font-weight: 400;
+}
+.NotoSansKR500 {
+  font-family: "NotoSansKR", sans-serif;
+  font-weight: 500;
+}

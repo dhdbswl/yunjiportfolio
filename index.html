@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YJ - WEBSITE | HOME</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/common/font.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="index">
+		<header>
+			<ul class="navLink">
+				<li class="active" onclick="indexNavClickFunc(this, 0)">Yunji</li>
+				<li onclick="indexNavClickFunc(this, 1)">Portfolio</li>
+				<li onclick="indexNavClickFunc(this, 2)">experience</li>
+				<li onclick="indexNavClickFunc(this, 3)">Contact</li>
+			</ul>
+			<div class="allPortfolioLink" onclick="allPortfolioLink(this)">All Portfolio</div>
+		</header>
+
+		<section id="info" class="indexSection">
+			<div id="indexInner" class="infoWrap">
+				<h1>Yunji Oh</h1>
+				<p>
+					web publisher<br/>and web developer<br/>
+					based in South Korea.
+				</p>
+				<p>
+					I can build a responsive web using <span class="transparentText">Html5</span>, <span class="transparentText">Css3</span>, and <span class="transparentText">Javascript</span>. I can develop a single page website using <span class="transparentText">ReactJS</span>. And I can do backend development using <span class="transparentText">Java</span> and <span class="transparentText">Spring</span>.
+				</p>
+			</div>
+		</section>
+
+		<section id="portfolio" class="indexSection">
+			<div id="indexInner" class="innerWrap portfolioWrap">
+				<span class="h1TopText">01 portfolio</span>
+				<h1>
+					<p>PORT</p>
+					<p class="transparentText">FOLIO</p>
+				</h1>
+				<div class="listWrap">
+					<ul>
+						<li>
+							<a href="./portfolios/portfolio-website.html" id="portfolioList02">
+								<span>Portfolio Webstie</span>
+								<span class="listYear">2021.</span>
+							</a>
+							<img src="./images/portfolio/portfolio02_01.png" alt="" class="portfolioListWrapImg">
+						</li>
+						<li>
+							<a href="./portfolios/online-shopping-mall.html" id="portfolioList01">
+								<span>Online Shopping mall for Portfolio</span>
+								<span class="listYear">2020.</span>
+							</a>
+							<img src="./images/portfolio/portfolio01_01.png" alt="" class="portfolioListWrapImg">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience" class="indexSection">
+			<div id="indexInner" class="innerWrap experienceWrap">
+				<span class="h1TopText">02 experience</span>
+				<h1>
+					<p>EXPE</p>
+					<p>RIENCE</p>
+				</h1>
+				<div class="listWrap">
+					<h2 class="listTitle">works</h2>
+					<ul>
+						<li>
+							<span class="listText NotoSansKR400">
+								퍼블리셔 (콘텐츠개발팀)
+								<span class="listFrom">(주)토브소프트</span>
+							</span>							
+							<span class="listYear">2018~2019</span>
+						</li>
+					</ul>
+				</div>
+				<div class="listWrap">
+					<h2 class="listTitle">education</h2>
+					<ul>
+						<li>
+							<span class="listText NotoSansKR400">
+								Java&Spring 프레임워크 개발자 양성과정
+								<span class="listFrom">내일배움 직업훈련</span>
+							</span>
+							<span class="listYear">2020.</span>
+						</li>
+						<li>
+							<span class="listText NotoSansKR400">
+								스마트웹디자인&모바일UI/UX 실무자 양성과정
+								<span class="listFrom">내일배움 직업훈련</span>
+							</span>
+							<span class="listYear">2018.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="indexSection">
+			<div id="indexInner" class="innerWrap contactWrap">				
+				<span class="h1TopText">03 contact</span>
+				<h1>
+					<p>GET</p>
+					<p class="transparentText">IN</p>
+					<p>TOUCH</p>
+				</h1>
+				<div class="contactLinkWrap">
+					<div class="emailWrap">
+						<h2>e-mail</h2>
+						<div class="emailText"><a href="mailto:yunz01@naver.com">yunz01@naver.com</a></div>
+						<img src="./images/arrow_left.png" alt="" class="arrowImg">
+					</div>
+					<div class="connectLinkWrap">
+						<h2>connect</h2>
+						<ul>
+							<li onclick="linkGithub()">github</li>
+							<li onclick="linkNotion()">notion</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="./js/common/common.js"></script>
+	<script type="text/javascript" src="./js/common/mouseInteractive.js"></script>
+	<script type="text/javascript" src="./js/common/goToLink.js"></script>
+</body>
+</html>

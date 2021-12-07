@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YJ - WEBSITE | PORTFOLIO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="portfolio">
+		<header>
+			<div class="allPortfolioLink" onclick="HomeLink(this)">Home</div>
+		</header>
+		<section id="portfolio" class="portfolioSection">
+			<ul class="portfolioList">
+				<li>
+					<a href="./online-shopping-mall.html"
+					onmouseover="portfolioMouseOverFunc(this, 0)"
+					id="portfolio01" class="textShadow">Online Shopping mall for Portfolio</a>
+				</li>
+				<li>
+					<a href="./portfolio-website.html"
+					onmouseover="portfolioMouseOverFunc(this, 1)"
+					id="portfolio02">Portfolio Webstie</a>
+				</li>
+			</ul>
+			<div class="portfolioListBg">
+				<img src="../images/portfolio/portfolio01_01.png" alt="">
+			</div>
+			<div class="portfolioListText">
+				<ul id="portfolioText" class="visible">
+					<li>2020.</li>
+					<li>Java, Spring</li>
+				</ul>
+				<ul id="portfolioText">
+					<li>2021.</li>
+					<li>Html5, Css3, JavaScript</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="../js/common/mouseInteractive.js"></script>
+	<script type="text/javascript" src="../js/common/goToLink.js"></script>
+</body>
+</html>

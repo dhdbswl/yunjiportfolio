@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*-------------------------------------
+common
+
+f2f3f5
+1a1a1a
+-------------------------------------*/
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  position: relative;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f2f3f5;
+}
+a {
+  text-decoration: none;
+  color: #f2f3f5;
+  width: max-content;
+}
+.transparentText {
+  color: #141613;
+  text-shadow: -1px 0 #f2f3f5, 0 1px #f2f3f5, 1px 0 #f2f3f5, 0 -1px #f2f3f5;
+}
+
+#Wrap {
+  position: relative;
+}
+
+/* ====================
+
+header
+
+==================== */
+header {
+  height: 100vh;
+  width: 10vw;
+  z-index: 3;
+  position: fixed;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  border-right: 1px solid #2a2a2a;
+}
+header > * {
+  position: absolute;
+  width: 100%;
+}
+header .navLink li,
+header .allPortfolioLink {
+  height: 5.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0 0 1.2rem;
+  box-sizing: border-box;
+}
+
+header .navLink {
+  top: 0;
+}
+header .navLink li {
+  position: relative;
+  border-bottom: 1px solid #2a2a2a;
+}
+header .navLink li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 2px;
+  height: 0%;
+  background-color: #f2f3f5;
+  transition: all 0.4s ease-in-out;
+}
+header .navLink li.active::after {
+  height: 100%;
+}
+
+header .allPortfolioLink {
+  bottom: 0;
+  padding: 2.3rem 0 0 1.2rem;
+  border-top: 1px solid #2a2a2a;
+  background-color: #f2f3f5;
+  color: #1a1a1a;
+  box-sizing: border-box;
+  font-family: NeueMetanaBold;
+  transition: all 0.4s ease-in-out;
+  align-items: start;
+}
+header .allPortfolioLink.btnWideView {
+  font-size: 0rem;
+  width: 100vw !important;
+  height: 100vh !important;
+  justify-content: center;
+  background-color: #1a1a1a;
+  color: transparent;
+  align-items: center;
+}
+header .allPortfolioLink:hover {
+  height: 8rem;
+}
+
+/* ====================
+
+section
+
+==================== */
+section {
+  position: relative;
+  margin: 0 10vw 0 auto;
+  box-sizing: border-box;
+  width: 65vw;
+}
+.skillTag {
+  background-color: #383838;
+  padding: 0.2rem 0.3rem;
+  border-radius: 5px;
+  line-height: 2;
+  color: #e97777;
+}
+
+/* ====================
+
+미디어쿼리
+
+==================== */
+
+/* max-width: 1024px */
+@media screen and (max-width: 1024px) {
+  header .navLink li,
+  header .allPortfolioLink {
+    padding: 0 0 0 0.8rem;
+  }
+  header .allPortfolioLink {
+    padding: 1.7rem 0 0 0.8rem;
+  }
+  section {
+    margin: 0 5vw 0 auto;
+    width: 80vw;
+  }
+  section#portfolio .portfolioWrap h1 p:last-of-type {
+    right: 0% !important;
+  }
+  section#contact .contactWrap h1 > p:nth-of-type(3) {
+    right: 50% !important;
+    transform: translateX(50%);
+  }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 11px !important;
+  }
+  header {
+    border: none;
+  }
+  header .navLink {
+    display: none;
+  }
+  header .allPortfolioLink {
+    height: 10vw;
+    padding: 3rem 0 0 1.1rem;
+    font-size: 0;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+  }
+  header .allPortfolioLink::before {
+    content: "ALL";
+    font-size: 1rem;
+  }
+  header .allPortfolioLink:hover {
+    height: 13vw;
+  }
+}
+
+/* max-width: 480px */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px !important;
+  }
+  header .allPortfolioLink {
+    padding: 1.7rem 0 0 1.1rem;
+  }
+  section.indexSection .portfolioWrap h1,
+  section.indexSection .contactWrap h1 {
+    height: 29.4rem !important;
+  }
+  section#contact .contactWrap h1 {
+    height: 44.6rem !important;
+  }
+  section.indexSection .portfolioWrap h1 > p,
+  section.indexSection .contactWrap h1 > p {
+    font-size: 15rem !important;
+  }
+}

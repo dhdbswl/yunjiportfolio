@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YJ - WEBSITE | PORTFOLIO</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="portfolioDetail portfolioWebsite">
+		<header>
+			<div class="allPortfolioLink" onclick="HomeLink(this)">Home</div>
+		</header>
+		
+		<section id="portfolioDetail" class="detailInfo">
+			<div class="bgLine"></div>
+			<div class="portfolioDetailText">
+				<h1>Portfolio Website</h1>
+				<div class="portfolioTextTable">
+					<table>
+						<tr>
+							<th>portfolio Name</th>
+							<td>2021 Yunji Portfolio Website</td>
+						</tr>
+						<tr>
+							<th>Responsive</th>
+							<td>Responsive</td>
+						</tr>
+						<tr>
+							<th>Used Skills</th>
+							<td>
+								<span class="skillTag">HTML5</span> <span class="skillTag">CSS3</span> <span class="skillTag">JavaScript</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="portfolioLink">
+					<ul>
+						<li onclick="linkSitePortfolioShoppingmall()">Go to Site</li>
+						<li onclick="linkGithubPortfolioShoppingmall()">Go to Github</li>
+						<li onclick="linkNotionPortfolioShoppingmall()">Go to Notion</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolioDetailImg" class="portfolioInfoWrap">
+			<div class="innerPortfolioInfo">
+				<h2>publishing</h2>
+				<ul>
+					<li>fixed된 내비게이션 바</li>
+					<li>메인 화면 내 내비게이션 클릭시 해당 섹션으로 화면 이동</li>
+					<li>flexBox를 활용한 컨테이너 정렬</li>
+					<li>프로젝트 리스트 마우스 오버시 마우스 인터랙션</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="portfolioDetailImg" class="portfolioDetailImg_1">
+			<h2 class="detailImgText">main page</h2>
+			<img src="../images/portfolio/portfolio02_main.png" alt="">
+		</section>
+
+		<section id="portfolioDetailImg" class="portfolioDetailImg_2">
+			<h2 class="detailImgText">portfolio list page</h2>
+			<img src="../images/portfolio/portfolio02_portfolioList.png" alt="">
+		</section>
+	</div>
+
+	<script type="text/javascript" src="../js/common/mouseInteractive.js"></script>
+	<script type="text/javascript" src="../js/common/goToLink.js"></script>
+</body>
+</html>

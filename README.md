@@ -12,9 +12,9 @@
   > Html5
   > Css3
   > Javascript
-  - 결과물
-    > 호스팅 주소 : [github-website](https://dhdbswl.github.io/yunjiportfolio/)<br/>
-    > 소스코드 : [github](https://github.com/dhdbswl/yunjiportfolio.git)
+- 결과물
+  > 호스팅 주소 : [github-website](https://dhdbswl.github.io/yunjiportfolio/)<br/>
+  > 소스코드 : [github](https://github.com/dhdbswl/yunjiportfolio.git)
 
 ---
 

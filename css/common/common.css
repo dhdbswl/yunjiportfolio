@@ -17,12 +17,15 @@ html::-webkit-scrollbar {
 body {
   position: relative;
   background-color: #1a1a1a;
-  overflow-x: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   color: #f2f3f5;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -166,11 +169,13 @@ section {
   }
   header {
     border: none;
+    height: auto;
   }
   header .navLink {
     display: none;
   }
   header .allPortfolioLink {
+    top: 0;
     height: 10vw;
     padding: 3rem 0 0 1.1rem;
     font-size: 0;
@@ -183,6 +188,18 @@ section {
   }
   header .allPortfolioLink:hover {
     height: 13vw;
+  }
+  section.indexSection .innerWrap h1 {
+    height: 31rem !important;
+  }
+  section#contact .contactWrap h1 {
+    height: 45rem !important;
+  }
+  section.indexSection .innerWrap h1 > p {
+    font-size: 16rem !important;
+  }
+  section#contact .contactWrap .contactLinkWrap .emailWrap .arrowImg {
+    top: 10rem !important;
   }
 }
 

@@ -156,6 +156,33 @@ section#portfolioDetail .portfolioLink ul li:hover {
   background-color: #f2f3f5;
 }
 
+/* caihong detail page */
+#wrap.caihong #portfolioDetail {
+  width: 90vw;
+  height: auto;
+  margin: 0 0 0 auto;
+}
+#wrap.caihong #portfolioDetail > img {
+  width: 100%;
+}
+#wrap.caihong #portfolioDetail .portfolioLink {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: 13.5%;
+}
+#wrap.caihong #portfolioDetail .portfolioLink ul {
+  display: block;
+}
+#wrap.caihong #portfolioDetail .portfolioLink ul li {
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+#wrap.caihong #portfolioDetail .portfolioLink ul li:not(:last-of-type) {
+  margin: 0 0 0.5rem 0;
+}
+
 /* ====================
 
 section#portfolioDetailImg
@@ -221,14 +248,21 @@ section#portfolioDetailImg.portfolioInfoWrap ul li::before {
 
 /* max-width: 768px */
 @media screen and (max-width: 768px) {
-  header .allPortfolioLink {
-    font-size: inherit;
-    padding: 3rem 0 0 0.3rem;
-  }
-  header .allPortfolioLink::before {
-    content: "";
+  section#portfolio {
+    padding: 0;
+    margin: 0 5vw 0 auto;
   }
   section#portfolio .portfolioListText {
     height: 0.9rem;
+  }
+  section#portfolio .portfolioListText #portfolioText li {
+    width: 50%;
+  }
+  #wrap.caihong #portfolioDetail {
+    width: 100vw;
+  }
+
+  section#portfolioDetail h1 {
+    font-size: 4.8rem;
   }
 }

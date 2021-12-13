@@ -36,7 +36,7 @@ section.indexSection .innerWrap h1 > p {
 
 /* listWrap */
 section.indexSection .innerWrap .listWrap {
-  margin: 7rem 0;
+  margin: 7rem 0 3rem;
 }
 section.indexSection .innerWrap .listWrap .listTitle {
   margin: 0 0 1.7rem 0;
@@ -129,6 +129,20 @@ section#portfolio .portfolioWrap h1 p:first-of-type {
 section#portfolio .portfolioWrap h1 p:last-of-type {
   bottom: 0;
   right: -15%;
+}
+section#portfolio .portfolioWrap .viewAllPortfolioBtn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+section#portfolio .portfolioWrap .viewAllPortfolioBtn a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  font-family: "NeueMetanaBold", sans-serif;
+  font-size: 1.2rem;
 }
 
 /* ====================

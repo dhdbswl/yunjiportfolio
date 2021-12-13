@@ -21,7 +21,7 @@
 ## 02. 결과물 디테일
 
 - 메인 페이지
-  <img src="./images/portfolio/portfolio02_main.png" />
+  <img src="./images/portfolio/portfolio03_main.png" />
 
 - 포트폴리오 리스트 페이지
-  <img src="./images/portfolio/portfolio02_portfolioList.png" />
+  <img src="./images/portfolio/portfolio03_portfolioList.png" />

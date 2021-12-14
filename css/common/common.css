@@ -201,17 +201,16 @@ section {
     font-size: 8px !important;
   }
   header .allPortfolioLink {
-    padding: 1.7rem 0 0 1.1rem;
+    padding: 0 0 0 0.5rem;
   }
-  section.indexSection .portfolioWrap h1,
-  section.indexSection .contactWrap h1 {
-    height: 29.4rem !important;
+  section#portfolioDetail.detailInfo,
+  section#portfolioDetailImg {
+    width: 90vw;
   }
-  section#contact .contactWrap h1 {
-    height: 44.6rem !important;
+  section#portfolioDetail.detailInfo {
+    margin: 0 auto !important;
   }
-  section.indexSection .portfolioWrap h1 > p,
-  section.indexSection .contactWrap h1 > p {
-    font-size: 15rem !important;
+  section#portfolioDetailImg {
+    margin: 5rem auto 14rem !important;
   }
 }

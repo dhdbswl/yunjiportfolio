@@ -7,11 +7,6 @@ function linkGithub() {
 	window.open("https://github.com/dhdbswl", "_blank")
 }
 
-// notion
-function linkNotion() {
-	window.open("https://spice-chemistry-b6a.notion.site/Web-Application-Developer-yunji-oh-5153132266124628a0a1fb483a76382b", "_blank")
-}
-
 // portfolio - caihong website
 function linkSiteCaihongWebsite() {
 	window.open("https://dhdbswl.github.io/portfolioCaihong/", "_blank")

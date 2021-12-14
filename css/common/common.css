@@ -181,6 +181,13 @@ section {
   header .allPortfolioLink:hover {
     height: 13vw;
   }
+
+  section {
+    margin: 0 auto;
+  }
+  section#info .infoWrap p {
+    font-size: 3.3rem !important;
+  }
   section.indexSection .innerWrap h1 {
     height: 23rem !important;
   }

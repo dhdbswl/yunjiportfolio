@@ -156,33 +156,6 @@ section#portfolioDetail .portfolioLink ul li:hover {
   background-color: #f2f3f5;
 }
 
-/* caihong detail page */
-#wrap.caihong #portfolioDetail {
-  width: 90vw;
-  height: auto;
-  margin: 0 0 0 auto;
-}
-#wrap.caihong #portfolioDetail > img {
-  width: 100%;
-}
-#wrap.caihong #portfolioDetail .portfolioLink {
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  right: 13.5%;
-}
-#wrap.caihong #portfolioDetail .portfolioLink ul {
-  display: block;
-}
-#wrap.caihong #portfolioDetail .portfolioLink ul li {
-  color: #1a1a1a;
-  border: 1px solid #1a1a1a;
-  text-align: center;
-}
-#wrap.caihong #portfolioDetail .portfolioLink ul li:not(:last-of-type) {
-  margin: 0 0 0.5rem 0;
-}
-
 /* ====================
 
 section#portfolioDetailImg
@@ -196,8 +169,6 @@ section#portfolioDetailImg .detailImgText {
 }
 section#portfolioDetailImg img {
   width: 100%;
-}
-section#portfolioDetailImg.portfolioInfoWrap {
 }
 section#portfolioDetailImg.portfolioInfoWrap h2 {
   font-family: "NeueMetanaBold", sans-serif;
@@ -230,6 +201,26 @@ section#portfolioDetailImg.portfolioInfoWrap ul li::before {
   width: 0.5rem;
 }
 
+/* flexDetail */
+section#portfolioDetailImg.flexDetail {
+  margin: 5rem 0 14rem 10vw !important;
+  width: 90vw;
+}
+section#portfolioDetailImg.flexDetail .flexImg {
+  display: flex;
+  justify-content: center;
+}
+section#portfolioDetailImg.flexDetail .flexImg img {
+  height: fit-content;
+}
+section#portfolioDetailImg.flexDetail .flexImg img:nth-of-type(1) {
+  width: 69%;
+  margin-right: 1%;
+}
+section#portfolioDetailImg.flexDetail .flexImg img:nth-of-type(2) {
+  width: 30%;
+}
+
 /* ====================
 
 미디어쿼리
@@ -258,11 +249,13 @@ section#portfolioDetailImg.portfolioInfoWrap ul li::before {
   section#portfolio .portfolioListText #portfolioText li {
     width: 50%;
   }
-  #wrap.caihong #portfolioDetail {
-    width: 100vw;
-  }
 
   section#portfolioDetail h1 {
     font-size: 4.8rem;
+  }
+
+  section#portfolioDetailImg.flexDetail {
+    margin: 5rem auto 14rem !important;
+    width: 95vw;
   }
 }

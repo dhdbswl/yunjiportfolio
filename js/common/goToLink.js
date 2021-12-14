@@ -22,9 +22,6 @@ function linkSitePortfolioShoppingmall() {
 function linkGithubPortfolioShoppingmall() {
 	window.open("https://github.com/rkr0111/TeamProject", "_blank")
 }
-function linkNotionPortfolioShoppingmall() {
-	window.open("https://spice-chemistry-b6a.notion.site/04701e90d56e4ccdaebb6c5a0b740fa8", "_blank")
-}
 
 // portfolio - Yunji Portfolio Website
 function linkSitePortfolioYunjiWebsite() {

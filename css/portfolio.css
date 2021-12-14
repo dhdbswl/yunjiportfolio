@@ -66,7 +66,6 @@ section#portfolio .portfolioListText {
   bottom: 3%;
   width: 100%;
   height: 0.55rem;
-  overflow: hidden;
 }
 section#portfolio .portfolioListText #portfolioText {
   display: flex;
@@ -230,9 +229,9 @@ section#portfolioDetailImg.flexDetail .flexImg img:nth-of-type(2) {
 /* max-width: 1024px */
 @media screen and (max-width: 1024px) {
   section#portfolio .portfolioListBg {
-    left: 3%;
+    left: 0%;
     right: unset;
-    bottom: 10%;
+    bottom: 15%;
     top: unset;
   }
 }
@@ -243,11 +242,14 @@ section#portfolioDetailImg.flexDetail .flexImg img:nth-of-type(2) {
     padding: 0;
     margin: 0 5vw 0 auto;
   }
+
   section#portfolio .portfolioListText {
     height: 0.9rem;
+    bottom: 10%;
   }
   section#portfolio .portfolioListText #portfolioText li {
     width: 50%;
+    font-size: 1rem;
   }
 
   section#portfolioDetail h1 {
@@ -257,5 +259,24 @@ section#portfolioDetailImg.flexDetail .flexImg img:nth-of-type(2) {
   section#portfolioDetailImg.flexDetail {
     margin: 5rem auto 14rem !important;
     width: 95vw;
+  }
+  section#portfolioDetailImg.flexDetail .flexImg {
+    display: block;
+  }
+  section#portfolioDetailImg.flexDetail .flexImg img {
+    width: 100% !important;
+    margin: 0 0 3% 0 !important;
+  }
+
+  section#portfolioDetail .portfolioLink ul li,
+  section#portfolioDetail .portfolioTextTable table tr th,
+  section#portfolioDetail .portfolioTextTable table tr td,
+  section#portfolioDetailImg.portfolioInfoWrap ul {
+    font-size: 1.8rem;
+  }
+
+  section#portfolio .portfolioList li a,
+  section#portfolioDetailImg.portfolioInfoWrap h2 {
+    font-size: 2.7rem;
   }
 }

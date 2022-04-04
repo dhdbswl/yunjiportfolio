@@ -48,7 +48,7 @@ header
 ==================== */
 header {
   height: 100vh;
-  width: 10vw;
+  width: 12vw;
   z-index: 3;
   position: fixed;
   font-size: 0.7rem;
@@ -147,7 +147,7 @@ section {
   }
   section {
     margin: 0 5vw 0 auto;
-    width: 80vw;
+    width: 78vw;
   }
   section#portfolio .portfolioWrap h1 p:last-of-type {
     right: 0% !important;
@@ -164,10 +164,6 @@ section {
     font-size: 11px !important;
   }
   header {
-    border: none;
-    height: auto;
-  }
-  header .navLink {
     display: none;
   }
   header .allPortfolioLink {
